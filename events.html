@@ -29,7 +29,7 @@
     Our goal is to host two tailgate fundraisers this season &mdash; one earlier in the schedule and one at homecoming &mdash;
     to bring alumni together, celebrate the Pack, and raise critical resources for the foundation&rsquo;s mission.
   </p>
-  <p><strong>All events are subject to change. Please check this page regularly for the most up-to-date information.</em></p>
+  <p><strong>All events are subject to change. Please check this page regularly for the most up-to-date information.</strong></p>
 </section>
 
 <div class="events-grid">
@@ -122,61 +122,7 @@
     or support? Cast your vote and help us build events the community is excited about.
   </p>
 
-  <div class="poll" id="fundraiser-poll">
-    <div class="poll-option" data-option="cocktail">
-      <div class="poll-label">
-        <span>Cocktail Mixer / Networking Night</span>
-        <span class="poll-count" data-count="0">0 votes</span>
-      </div>
-      <div class="poll-bar"><div class="poll-fill"></div></div>
-      <button class="poll-vote-btn" type="button">Vote</button>
-    </div>
-
-    <div class="poll-option" data-option="karaoke">
-      <div class="poll-label">
-        <span>Karaoke Night</span>
-        <span class="poll-count" data-count="0">0 votes</span>
-      </div>
-      <div class="poll-bar"><div class="poll-fill"></div></div>
-      <button class="poll-vote-btn" type="button">Vote</button>
-    </div>
-
-    <div class="poll-option" data-option="auction">
-      <div class="poll-label">
-        <span>Silent Auction</span>
-        <span class="poll-count" data-count="0">0 votes</span>
-      </div>
-      <div class="poll-bar"><div class="poll-fill"></div></div>
-      <button class="poll-vote-btn" type="button">Vote</button>
-    </div>
-
-    <div class="poll-option" data-option="5k">
-      <div class="poll-label">
-        <span>Pack Forever 5K Run / Walk</span>
-        <span class="poll-count" data-count="0">0 votes</span>
-      </div>
-      <div class="poll-bar"><div class="poll-fill"></div></div>
-      <button class="poll-vote-btn" type="button">Vote</button>
-    </div>
-
-    <div class="poll-option" data-option="trivia">
-      <div class="poll-label">
-        <span>Trivia Night at a Local Venue</span>
-        <span class="poll-count" data-count="0">0 votes</span>
-      </div>
-      <div class="poll-bar"><div class="poll-fill"></div></div>
-      <button class="poll-vote-btn" type="button">Vote</button>
-    </div>
-
-    <div class="poll-option" data-option="bbq">
-      <div class="poll-label">
-        <span>Community BBQ / Pig Roast</span>
-        <span class="poll-count" data-count="0">0 votes</span>
-      </div>
-      <div class="poll-bar"><div class="poll-fill"></div></div>
-      <button class="poll-vote-btn" type="button">Vote</button>
-    </div>
-  </div>
+  <a class="btn red" href="https://docs.google.com/forms/d/e/1FAIpQLSe8sKL5x_7Qhka-XpmKN3G3mSTyF698NFijCz7kV3eXKVPaxg/viewform?usp=publish-editor" target="_blank">VOTE!</a>
 
   <p class="poll-note">
     Have another idea? Email us at
@@ -188,38 +134,6 @@
 <footer>
   <p>&copy; 2026 Pack Forever Foundation</p>
 </footer>
-
-<script>
-  // Simple in-browser poll. Votes persist for the visitor in this session only.
-  // For a real persistent poll, replace this section with a Google Form embed.
-  (function() {
-    var poll = document.getElementById('fundraiser-poll');
-    if (!poll) return;
-    var voted = false;
-
-    poll.addEventListener('click', function(e) {
-      if (!e.target.classList.contains('poll-vote-btn')) return;
-      if (voted) return;
-      voted = true;
-
-      var option = e.target.closest('.poll-option');
-      var countEl = option.querySelector('.poll-count');
-      var current = parseInt(countEl.getAttribute('data-count'), 10) || 0;
-      countEl.setAttribute('data-count', current + 1);
-      countEl.textContent = (current + 1) + (current + 1 === 1 ? ' vote' : ' votes');
-
-      // Disable all vote buttons after voting
-      var buttons = poll.querySelectorAll('.poll-vote-btn');
-      buttons.forEach(function(b) {
-        b.disabled = true;
-        b.textContent = b === e.target ? 'Thanks!' : 'Voted';
-      });
-
-      // Update bar widths (visual feedback for the choice)
-      option.querySelector('.poll-fill').style.width = '100%';
-    });
-  })();
-</script>
 
 </body>
 </html>
