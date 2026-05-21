@@ -5,6 +5,112 @@
 <title>Events | Pack Forever Foundation</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="styles.css">
+<style>
+/* ---------- Featured Launch Event (Brunch) ---------- */
+.brunch-launch {
+  max-width: 1100px;
+  margin: 0 auto 40px;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.brunch-flyer {
+  position: relative;
+}
+
+.brunch-flyer img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+}
+
+.brunch-badge {
+  position: absolute;
+  top: -12px;
+  left: -12px;
+  background: #cc0000;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 800;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  z-index: 2;
+}
+
+.brunch-text {
+  text-align: left;
+}
+
+.brunch-text .eyebrow {
+  color: #cc0000;
+  font-weight: 800;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.brunch-text h2 {
+  color: #003366;
+  font-size: 36px;
+  margin-bottom: 8px;
+  line-height: 1.1;
+}
+
+.brunch-text .tagline {
+  color: #cc0000;
+  font-weight: 700;
+  font-style: italic;
+  margin-bottom: 22px;
+  font-size: 17px;
+}
+
+.brunch-text p {
+  line-height: 1.7;
+  margin-bottom: 14px;
+  color: #333;
+  max-width: none;
+}
+
+.brunch-text p strong {
+  color: #003366;
+}
+
+.brunch-free {
+  display: inline-block;
+  background: #003366;
+  color: #fff;
+  padding: 14px 22px;
+  border-radius: 10px;
+  margin-top: 12px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.brunch-free span {
+  color: #FFD200;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 800px) {
+  .brunch-launch {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .brunch-text { text-align: center; }
+  .brunch-text h2 { font-size: 28px; }
+  .brunch-flyer { max-width: 420px; margin: 0 auto; }
+}
+</style>
 </head>
 <body>
 
@@ -22,6 +128,43 @@
   <a href="events.html">Events</a>
   <a href="board.html">Board</a>
 </nav>
+
+<!-- FEATURED LAUNCH EVENT: BACKYARD BRUNCH -->
+<section style="padding-bottom: 30px;">
+  <h2>Foundation Launch</h2>
+  <p>
+    We&rsquo;re officially launching Pack Forever Foundation &mdash; and we want you there to celebrate with us.
+  </p>
+</section>
+
+<div class="brunch-launch">
+  <div class="brunch-flyer">
+    <div class="brunch-badge">Free Event</div>
+    <img src="images/backyard_brunch.jpg" alt="Backyard Brunch flyer - Saturday May 30, 2026">
+  </div>
+
+  <div class="brunch-text">
+    <div class="eyebrow">Official Foundation Launch</div>
+    <h2>Backyard Brunch</h2>
+    <div class="tagline">Together. Forever. Pack Forever.</div>
+
+    <p>
+      The Backyard Brunch is the official launch event for Pack Forever Foundation.
+      This is <strong>not a fundraiser</strong> &mdash; it&rsquo;s a chance for us to gather as a community,
+      share the founding story of the foundation, and walk through our mission and vision for 2026.
+    </p>
+
+    <p>
+      Whether you&rsquo;re a local alumni or traveling in for the CSUP Football Golf Tournament,
+      come spend the morning with us. <strong>Food and drinks will be provided</strong> &mdash; just bring yourself,
+      your family, and your stories from the Pack.
+    </p>
+
+    <div class="brunch-free">
+      <span>FREE TO ATTEND</span> &middot; Food provided &middot; Families welcome
+    </div>
+  </div>
+</div>
 
 <section>
   <h2>2026 Tailgate Fundraisers</h2>
@@ -91,49 +234,4 @@
         <circle cx="300" cy="140" r="38" fill="#fff" stroke="#000" stroke-width="3"/>
         <text x="300" y="152" font-family="Segoe UI, Arial, sans-serif" font-size="32" font-weight="900" fill="#000" text-anchor="middle">VS</text>
         <!-- NMHU side (right) -->
-        <text x="450" y="115" font-family="Segoe UI, Arial, sans-serif" font-size="62" font-weight="900" fill="#fff" text-anchor="middle" letter-spacing="2">NMHU</text>
-        <text x="450" y="170" font-family="Segoe UI, Arial, sans-serif" font-size="32" font-weight="900" fill="#fff" text-anchor="middle" letter-spacing="1">COWBOYS</text>
-        <text x="450" y="210" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#fff" text-anchor="middle" letter-spacing="2">NEW MEXICO HIGHLANDS</text>
-      </svg>
-    </div>
-    <div class="event-details">
-      <span class="event-tag">Homecoming &middot; Hall of Fame Day</span>
-      <h3>Homecoming Tailgate</h3>
-      <div class="event-meta">
-        <div><strong>Saturday, October 17, 2026</strong></div>
-        <div>Kickoff &middot; 2:00 PM</div>
-        <div>CSU Pueblo ThunderBowl</div>
-      </div>
-      <p>
-        Come home to the Pack. Reunite with former teammates, classmates, and the broader athletic alumni
-        community as we celebrate Homecoming and Hall of Fame Day at the ThunderBowl.
-      </p>
-      <p class="event-status">More details coming soon</p>
-    </div>
-  </div>
-
-</div>
-
-<!-- POLL SECTION -->
-<section class="poll-section">
-  <h2>Help Shape Our Calendar</h2>
-  <p>
-    As a first-year nonprofit, we want to hear from you. Which fundraiser ideas would you most likely attend
-    or support? Cast your vote and help us build events the community is excited about.
-  </p>
-
-  <a class="btn red" href="https://docs.google.com/forms/d/e/1FAIpQLSe8sKL5x_7Qhka-XpmKN3G3mSTyF698NFijCz7kV3eXKVPaxg/viewform?usp=publish-editor" target="_blank">VOTE!</a>
-
-  <p class="poll-note">
-    Have another idea? Email us at
-    <strong><a href="mailto:packforeverfoundation@gmail.com">packforeverfoundation@gmail.com</a></strong>
-    and we&rsquo;ll add it to the conversation.
-  </p>
-</section>
-
-<footer>
-  <p>&copy; 2026 Pack Forever Foundation</p>
-</footer>
-
-</body>
-</html>
+        <text x="450" y="115" font-family="Segoe UI, Arial, sans-serif" font-size="62" font-weight="900" fill="#fff" text-anchor="middle" letter-spacing="2">NMH
