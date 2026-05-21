@@ -453,3 +453,107 @@ section p {
   color: #666;
   text-align: center;
 }
+/* ---------- Featured Launch Event (Brunch) ---------- */
+.brunch-launch {
+  max-width: 1100px;
+  margin: 0 auto 40px;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.brunch-flyer {
+  position: relative;
+}
+
+.brunch-flyer img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+}
+
+.brunch-badge {
+  position: absolute;
+  top: -12px;
+  left: -12px;
+  background: #cc0000;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 800;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  z-index: 2;
+}
+
+.brunch-text {
+  text-align: left;
+}
+
+.brunch-text .eyebrow {
+  color: #cc0000;
+  font-weight: 800;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.brunch-text h2 {
+  color: #003366;
+  font-size: 36px;
+  margin-bottom: 8px;
+  line-height: 1.1;
+}
+
+.brunch-text .tagline {
+  color: #cc0000;
+  font-weight: 700;
+  font-style: italic;
+  margin-bottom: 22px;
+  font-size: 17px;
+}
+
+.brunch-text p {
+  line-height: 1.7;
+  margin-bottom: 14px;
+  color: #333;
+  max-width: none;
+}
+
+.brunch-text p strong {
+  color: #003366;
+}
+
+.brunch-free {
+  display: inline-block;
+  background: #003366;
+  color: #fff;
+  padding: 14px 22px;
+  border-radius: 10px;
+  margin-top: 12px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.brunch-free span {
+  color: #FFD200;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 800px) {
+  .brunch-launch {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .brunch-text { text-align: center; }
+  .brunch-text h2 { font-size: 28px; }
+  .brunch-flyer { max-width: 420px; margin: 0 auto; }
+}
