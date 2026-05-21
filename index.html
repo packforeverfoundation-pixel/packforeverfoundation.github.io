@@ -11,50 +11,36 @@
   padding: 20px 20px 60px;
 }
 
-.upcoming-event-card {
-  max-width: 700px;
-  margin: 0 auto;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
-  border-left: 6px solid #cc0000;
-  padding: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 25px;
-  flex-wrap: wrap;
-}
-
-.upcoming-event-card .info {
-  text-align: left;
-  flex: 1;
-  min-width: 220px;
-}
-
-.upcoming-event-card .eyebrow {
-  color: #cc0000;
-  font-weight: 800;
-  font-size: 12px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin-bottom: 6px;
-}
-
-.upcoming-event-card h3 {
-  color: #003366;
-  font-size: 22px;
-  margin-bottom: 4px;
-}
-
-.upcoming-event-card .event-date {
-  color: #666;
-  font-size: 15px;
-}
+/* ... your existing styles stay here ... */
 
 /* Subtle divider between stacked board-cta sections */
 .board-cta + .board-cta {
   border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+/* Side-by-side CTAs */
+.cta-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.cta-row .board-cta {
+  margin: 0;
+}
+
+.cta-row .board-cta + .board-cta {
+  border-left: 1px solid rgba(255,255,255,0.08);
+  border-top: none;
+}
+
+@media (max-width: 768px) {
+  .cta-row {
+    grid-template-columns: 1fr;
+  }
+  .cta-row .board-cta + .board-cta {
+    border-left: none;
+    border-top: 1px solid rgba(255,255,255,0.08);
+  }
 }
 </style>
 </head>
